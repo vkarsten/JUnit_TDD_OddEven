@@ -12,15 +12,15 @@ public class OddEvenCheckerTest {
 
 
     @ParameterizedTest(name = "test odd number with: {arguments} ")
-    @ValueSource(//TODO)
-            public void testOddNumber(int number) {
-        //TODO
+    @ValueSource(ints = {25, 5})
+    public void testOddNumber(int number) {
+        assertTrue(oddEvenChecker.isOddNumber(number));
     }
 
 
     @ParameterizedTest(name = "test even number with: {arguments} ")
-    @ValueSource(//TODO)
-            public void testEvenNumber(int number) {
-        //TODO
+    @ValueSource(ints = {20, 10})
+    public void testEvenNumber(int number) {
+        assertFalse(oddEvenChecker.isOddNumber(number));
     }
 }

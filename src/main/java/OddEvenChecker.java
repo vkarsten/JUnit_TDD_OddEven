@@ -9,6 +9,6 @@ public class OddEvenChecker {
      * @return
      */
     public boolean isOddNumber(int number) {
-        //TODO
+        return number % 2 != 0;
     }
 }
